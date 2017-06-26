@@ -1,10 +1,21 @@
 ---
 layout: page
 title: Home
-title-image: /assets/icons/logo_260x260.png
 ---
 {% include JB/setup %}
 
+{% assign englishPosts = site.posts | where: "language", "en" %}
+{% for post in englishPosts limit:20 %}
+<article class="box">				
+				<div class="content">
+					<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+					<p class="text">{{ post.description }}</p>
+					<p class="text-small"><i>Posted on {{ post.date | date_to_string }} by {{ post.author }}</i></p>
+					<a class="button" href="{{ BASE_PATH }}{{ post.url }}">Read Full Post</a>
+				</div>
+</article>
+{% endfor %}
+<!--
 <div>
   {% assign englishPosts = site.posts | where: "language", "en" %}
   {% for post in englishPosts limit:20 %}
@@ -17,4 +28,4 @@ title-image: /assets/icons/logo_260x260.png
 		</div>
 	</div>
   {% endfor %}
-</div>
+</div>-->
