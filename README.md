@@ -1,7 +1,7 @@
 # Our Blog Repository
 
-Our main blog - based on Jekyll and served here:
-https://blog.codeinside.eu
+Design test blog - based on Jekyll and served here:
+https://oliverguhr.github.io/Blog/
 
 Build Status:
 [![Build Status](https://travis-ci.org/Code-Inside/Blog.svg?branch=gh-pages)](https://travis-ci.org/Code-Inside/Blog)
